@@ -21,10 +21,28 @@ function cerrarModal(id) {
 
 }
 
+// Cerrar al hacer clic fuera de la ventana
+document.addEventListener("DOMContentLoaded", function () {
+
+    document.querySelectorAll(".modal").forEach(function (modal) {
+
+        modal.addEventListener("click", function (event) {
+
+            if (event.target === modal) {
+                cerrarModal(modal.id);
+            }
+
+        });
+
+    });
+
+});
+
 
 // Cerrar al hacer clic fuera de la ventana
-document.querySelectorAll(".modal").forEach(modal => {
+/*document.querySelectorAll(".modal").forEach(modal => {
 
+ 
     modal.addEventListener("click", function(evento) {
 
         if (evento.target === modal) {
@@ -33,7 +51,7 @@ document.querySelectorAll(".modal").forEach(modal => {
 
     });
 
-});
+});*/
 
 
 // Cerrar con la tecla Escape

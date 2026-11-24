@@ -445,9 +445,12 @@ h1 span {
     margin: 0 auto 20px;
 }
 .confirmacion-button{
-    padding: 10px;
+    padding: 13px;
     border: none;
     width: 50%;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
     
 
     background-color: #879783;
@@ -482,6 +485,7 @@ h1 span {
     display: block;
     margin: 0 auto;
     width: fit-content;
+    font-size: 16px;
 }
 
 /* TRANSFERENCIAS */
@@ -1287,6 +1291,7 @@ button.foto {
 
     .seccion-final h2 {
         font-size: 30px;
+        font-family: 'Poppins', sans-serif;
     }
 
     .contenedor-final {
@@ -1295,6 +1300,20 @@ button.foto {
 
     .tarjeta-final {
         padding: 30px 22px;
+    }
+
+    .tarjeta-final p {
+            color: #9D3333;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    }
+
+    .tarjeta-final h3 {
+        color: #9D3333;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
     }
 
  .seccion-final {
@@ -1342,4 +1361,3 @@ button.foto {
 
 
 }
-
