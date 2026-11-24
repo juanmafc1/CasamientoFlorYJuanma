@@ -1,0 +1,496 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nuestro casamiento</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<script src="js/script.js"></script>
+
+<body>
+
+    <header class="portada">
+        <div class="portada-contenido">
+            <p class="pre-titulo">Con mucho amor</p>
+
+            <h1>Flor <span>&amp;</span> Juanma</h1>
+         <div class="separador">❧</div>
+        <p class ="mensaje">¡Nos casamos!</p>
+
+        <p class="fecha">20 de marzo de 2027</p>
+         <a href="#galeria" class="boton">
+            Descubrir nuestra invitación
+         </a>
+        </div>
+    </header>
+    <main>
+
+<section id="galeria" class="galeria">
+ 
+<!-- Collage -->
+
+<div class="collage">
+
+    <!-- CAMISA HAWAIANA -->
+    <button class="collage-foto foto-camisa" type="button"
+    onclick="abrirModal('modalCamisas')">
+        <img src="img/Vestimenta.jpeg" alt="Código de vestimenta">
+    </button>
+
+    <!-- MENÚ -->
+    <button class="collage-foto foto-menu" type="button"
+     onclick="abrirModal('modalMenu')">
+        <img src="img/Menu.jpeg" alt="Menú">
+    </button>
+
+    <!-- TORTA -->
+    <button class="collage-foto foto-torta" type="button">
+        <img src="img/Torta.jpeg" alt="Torta de limón">
+    </button>
+
+    <!-- ALOJAMIENTOS -->
+    <button class="collage-foto foto-alojamientos" 
+            type="button"
+            onclick="abrirModal('modalAlojamientos')">
+        <img src="img/Alojamientos.jpeg" alt="Alojamientos">
+    </button>
+
+    <!-- SALÓN -->
+    <button class="collage-foto foto-salon"
+            type="button"
+            onclick="abrirModal('modalSalon')">
+        <img src="img/Salon.png" alt="Salón">        
+    </button>
+
+    <!-- ANOTACIONES DEL SALÓN -->
+    <img src="img/decoraciones/Flecha salon.png"
+     class="decoracion deco-flecha-salon"
+     alt="">
+
+     <img src="img/decoraciones/salon texto.png"
+     class="decoracion deco-texto-salon"
+     alt="">
+
+    <!-- CEREMONIA -->
+    <button class="collage-foto foto-ceremonia" type="button"
+    onclick="abrirModal('modalCeremonia')">
+        <img src="img/Ceremonia.jpeg" alt="Ceremonia">
+    </button>
+
+    <!-- FERIADOS -->
+    <button class="collage-foto foto-feriados" type="button"
+    onclick="abrirModal('modalCalendario')">
+        <img src="img/FotoCalendario.jpeg" alt="Feriados">
+    </button>
+    
+<!-- DECORACIONES -->
+
+<img src="img/decoraciones/Corazón FJ.png"
+     class="decoracion deco-corazon"
+     alt="">
+
+<img src="img/decoraciones/Copas.png"
+     class="decoracion deco-copas"
+     alt="">
+
+<img src="img/decoraciones/cupidos.png"
+     class="decoracion deco-cupidos"
+     alt="">
+
+<img src="img/decoraciones/Bola disco.png"
+     class="decoracion deco-bola"
+     alt="">
+
+<img src="img/decoraciones/Retrato.png"
+     class="decoracion deco-pareja"
+     alt="">
+
+<img src="img/decoraciones/Flecha salon.png"
+     class="decoracion deco-flecha-salon"
+     alt="">
+
+<img src="img/decoraciones/salon texto.png"
+     class="decoracion deco-texto-salon"
+     alt="">
+
+<img src="img/decoraciones/Flecha Camisas.png"
+     class="decoracion deco-flecha-camisas"
+     alt="">
+
+<img src="img/decoraciones/trae_una_camisa_hawaiana copia.png"
+     class="decoracion deco-texto-camisas"
+     alt="">
+
+<img src="img/decoraciones/Flecha Menu.png"
+     class="decoracion deco-flecha-menu"
+     alt="">
+
+<img src="img/decoraciones/chusmea_el_menu copia.png"
+     class="decoracion deco-texto-menu"
+     alt="">
+
+
+<img src="img/decoraciones/Flecha Alojamiento.png"
+     class="decoracion deco-flecha-alojamiento"
+     alt="">
+
+<img src="img/decoraciones/opciones_de_alojamientos copia.png"
+     class="decoracion deco-texto-alojamiento"
+     alt="">
+
+<img src="img/decoraciones/Flecha Torta.png"
+     class="decoracion deco-flecha-torta"
+     alt="">
+
+<img src="img/decoraciones/torta_de_limon_con_frutos_rojos copia.png"
+     class="decoracion deco-texto-torta"
+     alt="">
+
+<img src="img/decoraciones/Flecha Ceremonia.png"
+     class="decoracion deco-flecha-ceremonia"
+     alt="">
+
+<img src="img/decoraciones/ceremonia copia.png"
+     class="decoracion deco-texto-ceremonia"
+     alt="">
+     
+<img src="img/decoraciones/Flecha Calendario.png"
+     class="decoracion deco-flecha-calendario"
+     alt="">
+
+<img src="img/decoraciones/finde_largo_24_al_28 copia.png"
+     class="decoracion deco-texto-calendario"
+     alt="">
+
+
+
+</div>
+
+</section>
+    </main>
+
+<!-- MODAL DEL SALÓN -->
+
+<div id="modalSalon" class="modal">
+
+    <div class="modal-contenido editorial">
+
+        <button class="cerrar-modal"
+                type="button"
+                onclick="cerrarModal('modalSalon')">
+            &times;
+        </button>
+
+        <div class="modal-imagen">
+            <img src="img/Interior Salon.jpeg"
+                 alt="Fotografía del salón">
+        </div>
+
+        <div class="modal-informacion">
+
+            <p class="modal-subtitulo">
+                ¡A festejar!
+            </p>
+
+            <h2>El salón</h2>
+
+            <p>20 de marzo de 2027</p>
+
+            <p>Horario: 15:00 hs</p>
+
+            <p>
+                Ranch House Cariló<br>
+                Calles Casuarina y Perdiz, Cariló 
+            </p>
+
+            <a href="https://www.google.com/maps?client=opera-gx&oe=UTF-8&um=1&ie=UTF-8&fb=1&gl=ar&sa=X&geocode=KSd9bFZhnZyVMeo5WpNgCXRL&daddr=Casuarina+760,+B7167+Cariló,+Provincia+de+Buenos+Aires"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="boton">
+                Ver ubicación
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- MODAL CEREMONIA -->
+
+<div id="modalCeremonia" class="modal">
+
+    <div class="modal-contenido editorial">
+
+        <button class="cerrar-modal"
+                type="button"
+                onclick="cerrarModal('modalCeremonia')">
+            &times;
+        </button>
+
+        <div class="modal-imagen">
+            <img src="img/Interior Capilla.jpeg"
+                 alt="Fotografía interior de la capilla">
+        </div>
+
+        <div class="modal-informacion">
+
+            <p class="modal-subtitulo">
+                Acompañanos
+            </p>
+
+            <h2>La ceremonia</h2>
+
+            <p>Capilla Nuestra Señora del Perpetuo Socorro</p>            
+            <p>Horario: 14:00 hs</p>
+            <p>                
+                Calle Carpintero, entre Acacia y Algarrobo
+            </p>
+
+            <a href="https://www.google.com/maps/place/Capilla+Nuestra+Señora+del+Perpetuo+Socorro/@-37.1738621,-56.9038561,17z/data=!3m1!4b1!4m6!3m5!1s0x959c9de6bd6da5c5:0x5dfeffc56dc9ce9b!8m2!3d-37.1738621!4d-56.9038561!16s%2Fg%2F11bxg9w2_w?entry=ttu&g_ep=EgoyMDI2MTAxNC4wIKXMDSoASAFQAw%3D%3D"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="boton">
+                Ver ubicación
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- MODAL CAMISAS -->
+<div id="modalCamisas" class="modal">
+    <div class ="modal-contenido editorial">
+        <button class ="cerrar-modal"
+        type="button"
+        onclick="cerrarModal('modalCamisas')">
+    &times;
+         </button>
+         <div class="modal-imagen">
+            <img src="img/Camisas.jpeg"
+            alt="Fotografia camisas">
+         </div>
+         <div class="modal-informacion">            
+        <p class="modal-subtitulo">            
+            Dress code:
+        </p>
+        <p class="modal-contenido">Vestimenta formal
+            al aire libre.
+        </p>
+        <p class="modal-contenido">Empezamos con sol y terminamos de noche
+            Traé un abrigo y calzado cómodo
+        </p>        
+        <p class ="modal-contenido">Se nos ocurrió de cotillón que traigan camisas hawaianas o alguna prenda playera,
+            a criterio de ustedes. ¡Cuánto más colorido mejor!
+        </p>
+        <p class  ="modal-subtitulo">
+                Los esperamos.
+                 Flor & Juanma
+        </p> 
+        </div>   
+        </div>
+    </div>
+</div>
+
+<!-- MODAL ALOJAMIENTOS -->
+<div id="modalAlojamientos" class="modal">
+    <div class="modal-contenido editorial">
+
+        <button class="cerrar-modal"
+                type="button"
+                onclick="cerrarModal('modalAlojamientos')">
+            &times;
+        </button>
+
+        <div class="modal-imagen">
+            <img src="img/Alojamientos.jpeg"
+                 alt="Fotografía Alojamientos">
+        </div>
+
+        <div class="modal-informacion">
+
+            <p class="modal-subtitulo">
+                Para tener en cuenta:
+            </p>
+
+            <h2>Alojamientos</h2>
+
+            <p>Entendemos el esfuerzo que están haciendo y conseguimos esta lista
+                con contactos, alojamientos y descuentos.
+            </p> <br></br>
+
+            <p>¡Ojalá les sirva!</p>            
+
+            <a href="pdf/OPCIONES DE ALOJAMIENTO 2026 2027.pdf"
+               download="OPCIONES DE ALOJAMIENTO 2026 2027.pdf"               
+               class="boton-descarga">
+                Descargar listado de Alojamientos (PDF)
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- MENU-->
+<div id="modalMenu" class="modal">
+    <div class="modal-contenido editorial">
+
+        <button class="cerrar-modal"
+                type="button"
+                onclick="cerrarModal('modalMenu')">
+            &times;
+        </button>
+
+        <div class="modal-imagen">
+            <img src="img/Menu.jpeg"
+                 alt="Fotografía Menu">
+        </div>
+
+        <div class="modal-informacion">
+
+            <p class="modal-subtitulo">
+                Flor & Juanma 20-03-2027
+            </p>
+            <h3>Nuestro Menú</h3>           
+            <p class="modal-subtitulo">Recepción</p>
+            <p>Estación de Charcuteria y Estación de Mar</p>
+            <p class="modal-subtitulo">Principal</p>
+            <p>Fuegos:</p>
+            <p>Vacio, costillar, morcillas, chorizo bombon y molleja</p>
+            <p class="modal-subtitulo">Mesa Dulce</p>
+            <p> chocotorta, cheescake, tiramisú,
+                brownie con dulce de leche y merengue,
+                minicakes, shots dulces y ¡ más!
+            </p>
+            <p>¡Cafecito para cortar el dulce!</p>
+            
+            <p class="modal-subtitulo">Trasnoche</p>
+            <p>¡Papas fritas y mini-hamburgesas para recargar!</p>
+
+
+            
+        </div>
+    </div>
+</div>
+<!-- MODAL Calendario -->
+<div id="modalCalendario" class="modal">
+    <div class="modal-contenido editorial">
+
+        <button class="cerrar-modal"
+                type="button"
+                onclick="cerrarModal('modalCalendario')">
+            &times;
+        </button>
+
+        <div class="modal-imagen">
+            <img src="img/Playa.jpeg"
+                 alt="Fotografía Calendario">
+        </div>
+
+        <div class="modal-informacion">
+            <h2>¡Vamos contando los días!</h2>
+            <p class="modal-subtitulo">  
+                Por favor confirmar antes del 20-03-2027             
+            </p>          
+            <div class="contador">
+                <div>
+                    <span id="dias">00</span>
+                    <p>Días</p>
+                </div>
+            <div>
+                <span id="horas">00</span>
+                <p>Horas</p>
+            </div>
+            <div>
+                <span id="minutos">00</span>
+                <p>Minutos</p>
+            </div>
+            <div>
+                <span id="segundos">00</span>
+                <p>Segundos</p>
+            </div>
+        </div>
+            
+<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Casamiento%20de%20Flor%20y%20Juan&amp;dates=20270320/20270321&amp;details=Te%20esperamos%20para%20celebrar%20nuestro%20casamiento"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="boton">
+    📅 Agregar a Google Calendar
+</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<section id="confirmaciones" class="seccion-final">
+    <!-- Decoraciones e imagenes-->
+    <img src="img/texto-regalos.png"
+                 alt="Aceptamos regalitos acá"
+                 class="imagen-texto-regalos">
+    <img src="img/decoraciones/deco1.png"
+                 alt="decoracion1"
+                 class="deco1">
+
+    <img src="img/decoraciones/deco3.png"
+        alt="decoracion3"
+        class="deco3">   
+
+    <img src="img/decoraciones/deco4.png"
+        alt="decoracion4"
+        class="deco4">
+        </div>               
+
+    <div class="contenedor-final">
+        <!-- Regalos y Transferencias-->
+
+        <div class="tarjeta-final regalos">                       
+            <div class="datos-transferencia">                
+                <span id="aliasBancario">
+                    alias en pesos: <br>
+                    FLORYJUANMA1 
+                </span>
+                <h1>
+                    
+                </h1>
+                <span id="aliasBancario">
+                    alias en dólares: <br>
+                    FLORYJUANMA2    
+                </span>
+                <!--
+                <button type="button"
+                onclick="copiarAlias()">
+                Copiar Alias
+            </button>
+-->
+            </div>
+        </div>
+    </div>
+    <div class="tarjeta-final confirmacion">
+        <img src="img/imagenConfir.png"
+        alt="dibujo confimracion"
+        class ="imagen-confirmacion-paloma">   
+            <h3>¿Venis?</h3>
+                <a href ="https://forms.gle/rh7YoRsjiiWJeCZX8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="confirmacion-button">
+                CONFIRMÁ ACÁ
+                </a>
+        <img src="img/decoraciones/deco2.png"
+        alt="decoracion2"
+        class="deco2">      
+    </div>
+
+</section>
+</body>
+
+</html>

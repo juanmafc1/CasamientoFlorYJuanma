@@ -1,0 +1,1345 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* =========================
+   1. CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F7F3EA;    
+    color: #454C40;
+    font-family: Georgia, "Times New Roman", serif;
+    
+     margin: 0;
+    padding: 0;
+
+    background-image: url("../img/Fondo.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* =========================
+   2. PORTADA
+========================= */
+
+.portada {
+    min-height: 100vh;
+    padding: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-color: #F7F3EA;
+    background-image: url("../img/Fondo.jpeg");
+}
+
+.portada-contenido {
+    width: 100%;
+    max-width: 850px;
+
+    padding: 80px 40px;
+
+    border: 1px solid #C7CEBF;
+    outline: 1px solid #C7CEBF;
+    outline-offset: 8px;
+}
+
+
+/* =========================
+   3. TEXTOS DE LA PORTADA
+========================= */
+
+.pre-titulo {
+    color: #879783;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    margin-bottom: 25px;
+}
+
+h1 {
+    color: #4F5B4B;
+
+    font-size: 64px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+h1 span {
+    color: #B79A8D;
+    font-style: italic;
+}
+
+.separador {
+    color: #879783;
+    font-size: 38px;
+    margin: 20px 0;
+}
+
+.mensaje {
+    font-size: 23px;
+    font-style: italic;
+    margin-bottom: 18px;
+}
+
+.fecha {
+    color: #7D8877;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   4. BOTÓN
+========================= */
+
+.boton {
+    display: inline-block;
+
+    padding: 15px 25px;
+
+    background-color: #879783;
+    color: white;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #657560;
+}
+
+
+/* =========================
+   5. SEGUNDA SECCIÓN
+========================= */
+
+.detalles {
+    padding: 100px 25px;
+    text-align: center;
+}
+
+.detalles h2 {
+    max-width: 650px;
+    margin: 0 auto 25px;
+
+    color: #4F5B4B;
+    font-size: 38px;
+    font-weight: normal;
+    line-height: 1.3;
+}
+
+.descripcion {
+    max-width: 500px;
+    margin: 0 auto;
+
+    color: #77796E;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   6. ADAPTACIÓN A CELULARES
+========================= */
+
+@media (max-width: 600px) {
+
+    .portada {
+        min-height: 100svh;        
+        padding: 20px;
+    }
+
+    .portada-contenido {
+        padding: 55px 20px;
+    }
+
+    .pre-titulo {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .mensaje {
+        font-size: 20px;
+    }
+
+    .fecha {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .boton {
+        padding: 14px 16px;
+        font-size: 11px;
+    }
+
+    .detalles {
+        padding: 70px 25px;
+    }
+
+    .detalles h2 {
+        font-size: 30px;
+    }
+
+    .descripcion {
+        font-size: 16px;
+    }    
+}
+
+.eventos {
+    max-width: 1050px ;
+    margin: 60px auto 0;
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:25px;    
+}
+
+.evento{
+    padding: 40px 25px;
+    background-color: #FBF9F4;
+    border: 1px solid #D9DFD2;
+    text-align: center;
+    transition: transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.evento:hover{
+    transform:translate(-5px);
+    box-shadow: 0 8px 20px rgba(69, 76, 64, 0.08);   
+}
+.evento-icono {
+    display: block;
+    margin-bottom: 15px;
+
+    color: #879783;
+    font-size: 35px;
+}
+
+.evento h3 {
+    margin-bottom: 18px;
+
+    color: #4F5B4B;
+    font-size: 25px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.evento p {
+    margin-top: 10px;
+
+    color: #77796E;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   8. TARJETAS EN CELULARES
+========================= */
+
+@media (max-width: 600px) {
+
+    .eventos {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-top: 40px;
+    }
+
+    .evento {
+        padding: 32px 20px;
+    }
+}
+
+/* =========================
+   9. GALERÍA DE FOTOS
+========================= */
+
+
+.galeria {
+    padding: 50px 0;
+
+    /*background-color: #F7F3EA;
+    background-image: url("../img/Fondo.jpeg");*/
+
+    background-size: 500px auto;
+    background-repeat: repeat;
+    background-position: top left;
+    background : transparent;   
+}
+
+
+.galeria h2 {
+    color: #4F5B4B;
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.foto {
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.foto-principal {
+    grid-row: span 2;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+.foto:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   10. GALERÍA RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    .galeria {
+        padding: 70px 20px;
+    }
+
+    .galeria h2 {
+        font-size: 30px;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 350px 160px;
+        gap: 10px;
+        margin-top: 35px;
+    }
+
+    .foto-principal {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+}
+
+/* SECCIÓN FINAL */
+
+.seccion-final {
+    padding: 90px 25px;
+    /*background-color: #F7F3EA;
+    background-image: url("../img/Fondo.jpeg");*/
+    background: transparent;
+}
+
+.seccion-final h2 {
+    text-align: center;
+    color: #4F5B4B;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 45px;
+}
+
+.contenedor-final {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    max-width: 850px;
+    margin: 0 auto;
+
+    align-items: center;
+    text-align: center;    
+    
+}
+
+.tarjeta-final {
+    padding: 40px;
+    /*background-color: #F7F3EA;
+    background-image: url("../img/Fondo.jpeg");*/
+    background: transparent;
+    align-items: center;
+    text-align: center;
+}
+
+.tarjeta-final h3 {
+    color: #879783;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.tarjeta-final p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* FORMULARIO */
+
+#formConfirmacion {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+}
+
+#formConfirmacion input,
+#formConfirmacion select,
+#formConfirmacion textarea {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #D9DFD2;
+    background-color: transparent;    
+
+    font: arial,sans-serif;
+}
+
+.imagen-texto-regalos {
+    display: block;
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto 30px;
+}
+
+.imagen-confirmacion-paloma {
+    display: block;
+    width: 300px;
+    max-width: 1000%;
+    height: auto;
+    margin: 0 auto 20px;
+}
+.confirmacion-button{
+    padding: 10px;
+    border: none;
+    width: 50%;
+    
+
+    background-color: #879783;
+    color: white;
+
+    cursor: pointer;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+
+#formConfirmacion button,
+.datos-transferencia button {
+    padding: 10px;
+    border: none;
+    width: 50%;
+    
+
+    background-color: #879783;
+    color: white;
+
+    cursor: pointer;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+/* TRANSFERENCIAS */
+
+.datos-transferencia {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#aliasBancario {
+    overflow-wrap: anywhere;
+    font-weight: bold;
+}
+
+
+
+/* =========================
+   MODALES
+========================= */
+
+.modal {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    background-color: rgba(0, 0, 0, 0.65);
+
+    z-index: 1000;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.modal.activo {
+    display: flex;
+}
+
+.modal-contenido {
+    position: relative;
+
+    width: 100%;
+    max-width: 850px;
+    max-height: 90vh;
+
+    background-color: #FFFCF7;
+
+    overflow-y: auto;
+}
+
+
+/* MODAL EDITORIAL */
+
+.editorial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.modal-imagen img {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.modal-informacion {
+    padding: 60px 35px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.modal-subtitulo {
+    color: #9D3333;
+    font-style: italic;
+}
+
+.modal-informacion h2 {
+    color: #9D3333;
+
+    font-size: 40px;
+    font-weight: normal;
+    font-style: italic;
+}
+.modal-informacion h3 {
+    color: #9D3333;
+
+    font-size: 21px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.modal-informacion p {
+    line-height: 1.7;
+}
+
+/* agregamos a editorial los siguientes objetos para menu */
+.menu-contenido {
+    text-align: center;
+}
+
+.menu-seccion {
+    padding: 16px 0;
+    border-bottom: 1px solid #D9C8B7;
+}
+
+.menu-seccion h3 {
+    color: #9D3333;
+    font-size: 21px;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+.menu-seccion p {
+    color: #675D54;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.menu-cierre {
+    margin-top: 25px;
+    color: #94A590;
+    font-style: italic;
+}
+
+/* Modal Alojamientos */
+/* copiamos el estilo de Editorial Salon */
+
+
+
+/* BOTÓN DE CIERRE */
+
+.cerrar-modal {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+
+    background: none;
+    border: none;
+
+    color: #9D3333;
+    font-size: 32px;
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* BOTÓN DE DESCARGA */
+
+.boton-descarga {
+    display: inline-block;
+    padding: 14px 25px;
+    margin-top: 20px;
+
+    background-color: #94a590;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 6px;
+
+    font-size: 15px;
+    text-align: center;
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.boton-descarga:hover {
+    background-color: #74866f;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+    .boton-descarga {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+/* FOTOS CLICKEABLES */
+
+.foto {
+    padding: 0;
+    cursor: pointer;
+}
+
+button.foto {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    background: none;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .editorial {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-imagen img {
+        height: 230px;
+    }
+
+    .modal-informacion {
+        padding: 35px 25px;
+    }
+
+    .modal-informacion h2 {
+        font-size: 32px;
+    }
+
+}
+
+
+/* =========================
+   COLLAGE PRINCIPAL
+========================= */
+
+.collage {
+    position: relative;
+
+    width: 100%;
+    max-width: 1100px;
+    height: 650px;
+
+    margin: 60px auto 0;
+}
+
+
+/* ESTILO GENERAL DE LAS FOTOS */
+
+.collage-foto {
+    position: absolute;
+
+    padding: 0;
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+.collage-foto img {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* POSICIONES INDIVIDUALES */
+
+.foto-salon {
+    width: 28%;
+    height: 240px;
+
+    top: 45%;
+    left: 15%;
+}
+
+.foto-ceremonia {
+    width: 20%;
+    height: 280px;
+
+    top: 20%;
+    left: 48%;
+}
+
+.foto-menu {
+    width: 22%;
+    height: 180px;
+
+    top: 5%;
+    left: 72%;
+}
+
+
+/* =========================
+   DECORACIONES DEL COLLAGE
+========================= */
+
+.decoracion {
+    position: absolute;
+
+    height: auto;
+    object-fit: contain;
+
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* CORAZÓN F + J */
+.deco-corazon {
+    width: 9%;
+    top: 8%;
+    left: 5%;
+}
+
+/* COPAS */
+.deco-copas {
+    width: 10%;
+    top: 42%;
+    left: 95%;
+}
+
+/* CUPIDOS */
+.deco-cupidos {
+    width: 15%;
+    top: 42%;
+    left: 3%;
+}
+
+/* BOLA */
+.deco-bola {
+    width: 10%;
+    top: 69%;
+    left: 3%;
+}
+
+/* PAREJA */
+.deco-pareja {
+    width: 10%;
+    top: 75%;
+    left: 90%;
+}
+/* FLECHA DEL SALÓN */
+
+.deco-flecha-salon {
+    width: 5%;
+    top: 60%;
+    left: 17.5%;
+}
+
+/* TEXTO DEL SALÓN */
+
+.deco-texto-salon {
+    width: 7%;
+    top: 70%;
+    left: 14%;
+}
+
+
+/*Flecha Camisas*/
+.deco-flecha-camisas {
+    width: 5%;
+    top: 25%;
+    left: 24%;
+}
+
+/*Camisas Texto*/
+.deco-texto-camisas {
+    width: 7%;
+    top: 23%;
+    left: 19%;
+}
+
+/*Flecha Menu*/
+.deco-flecha-menu {
+    width: 5%;
+    top: 5%;
+    left: 38%;
+}
+
+/*Menu Texto*/
+.deco-texto-menu {
+    width: 6%;
+    top: 5%;
+    left: 32%;
+}
+
+/*Flecha Alojamiento*/
+.deco-flecha-alojamiento {
+    width: 5%;
+    top: 5%;
+    right: 23%;
+}
+
+/*Alojamiento Texto*/
+.deco-texto-alojamiento {
+    width: 6%;
+    top: 5%;
+    right: 28%;
+}
+
+/*Flecha Torta*/
+.deco-flecha-torta {
+    width: 4%;
+    top: 39%;
+    right: 24%;
+}
+
+/*Torta Texto*/
+.deco-texto-torta {
+    width: 6%;
+    top: 46%;
+    right: 21%;
+}
+
+/*Flecha Ceremonia*/
+.deco-flecha-ceremonia {
+    width: 5%;
+    bottom: 10%;
+    right: 40%;
+}
+
+/*Ceremonia Texto*/
+.deco-texto-ceremonia {
+    width: 7%;
+    bottom: 10%;
+    right: 33%;
+}
+
+/*Flecha Calendario*/
+.deco-flecha-calendario {
+    width: 5%;
+    bottom: 25%;
+    right: 20%;
+}
+
+/*Calendario Texto*/
+.deco-texto-calendario {
+    width: 7%;
+    bottom: 25%;
+    right: 13%;
+}
+
+.deco1{  
+    height: 50%;  
+    width: 15%;
+    top: 25%;
+    left: 32%;
+}
+
+.deco2{
+     width: 7%;
+    bottom: 25%;
+    right: 13%;
+}
+.deco3{
+    height: fit-content;
+    width: 15%;
+    bottom: 45%;
+    left: 80%;
+}
+.deco4{
+     width: 7%;
+    bottom: 25%;
+    right: 13%;
+}
+.deco5{
+     width: 7%;
+    bottom: 25%;
+    right: 13%;
+}
+
+
+/* =========================
+   COLLAGE - ESCRITORIO
+========================= */
+
+.collage {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    aspect-ratio: 1366 / 768;
+    margin: 60px auto 0;
+}
+
+.collage-foto {
+    position: absolute;
+
+    padding: 0;
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+    overflow: hidden;
+
+    transition: scale 0.3s ease;
+}
+
+.collage-foto img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collage-foto:hover {
+    scale: 1.035;
+    z-index: 10;
+}
+
+
+/* POSICIONES SEGÚN EL BOCETO */
+
+.foto-camisa {
+    left: 29.4%;
+    top: 27.5%;
+    width: 12.7%;
+    height: 22.3%;
+}
+
+.foto-menu {
+    left: 42.9%;
+    top: 12.1%;
+    width: 16%;
+    height: 30.7%;
+}
+
+.foto-torta {
+    left: 59.7%;
+    top: 20.6%;
+    width: 12.3%;
+    height: 29.2%;
+}
+
+.foto-alojamientos {
+    left: 72.8%;
+    top: 8.1%;
+    width: 13.7%;
+    height: 32.6%;
+}
+
+.foto-salon {
+    left: 22.2%;
+    top: 51.6%;
+    width: 22.5%;
+    height: 26.7%;
+}
+
+.foto-ceremonia {
+    left: 45.6%;
+    top: 45.1%;
+    width: 13.3%;
+    height: 35.5%;
+}
+
+.foto-feriados {
+    left: 61%;
+    top: 51.3%;
+    width: 13.8%;
+    height: 32.3%;
+}
+
+
+
+
+/* =========================
+   COLLAGE - CELULARES
+========================= */
+
+@media (max-width: 600px) {
+
+    .collage {
+        aspect-ratio: auto;
+        height: auto;
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 20px 12px;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .collage-foto {
+        position: relative;
+
+        top: auto;
+        left: auto;
+
+        width: 100%;
+        height: 190px;
+    }
+
+    .foto-camisa {
+        transform: translateY(25px);
+    }
+
+    .foto-menu {
+        transform: translateY(-10px);
+    }
+
+    .foto-torta {
+        transform: translateY(20px);
+    }
+
+    .foto-alojamientos {
+        transform: translateY(-10px);
+    }
+
+    .foto-salon {
+        grid-column: span 2;
+        height: 220px;
+        transform: translateY(10px);
+    }
+
+    .foto-ceremonia {
+        transform: translateY(20px);
+    }
+
+    .foto-feriados {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* =========================
+   MODALES TIPO NOTITA
+========================= */
+
+.modal-notita {
+    background-image: url("../img/Fondo.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.notita-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 22px;
+}
+.notita-contenido .notita-subtitulo {
+    color: #9D3333;
+    font-size: 28px;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.modal-notita h2 {
+    color: #9D3333;
+
+    font-size: 42px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.notita-separador {
+    color: #9D3333;
+    font-size: 35px;
+}
+
+.notita-destacado {
+    color: #9D3333;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.notita-contenido p {
+    color: #9D3333;
+    line-height: 1.7;
+}
+
+.notita-contenido .notita-firma {
+    margin-top: 15px;
+    color: #94a590;
+    font-style: italic;
+}
+
+/* Contador de días*/
+
+.contador {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.contador span {
+    display: block;
+    font-size: 32px;
+    color: #9D3333;
+}
+
+.contador p {
+    font-size: 13px;
+    color: #94a590;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .deco-flecha-salon {
+        width: 20%;
+        top: 69%;
+        left: 0%;
+    }
+    .deco-texto-salon{
+        width: 15%;
+        top: 76%;
+        left: -4%;
+    }
+    .deco-bola{
+        width: 16%;
+        top: 40%;
+        left: -8%;
+    }
+
+    .deco-corazon{
+        width: 15%;
+        top: 0%;
+        left: -5%;
+    }
+    .deco-pareja{
+        width: 18%;
+        top: 87%;
+        right: 5%;
+    }
+    .deco-flecha-menu{
+        width: 18%;
+        top: -3%;
+        left: 47%;
+    }
+    .deco-texto-menu{
+        width: 16%;
+        top: -1%;
+        left: 32%;
+    }
+    .deco-copas{
+        width: 18%;
+        top: 45%;
+        left: 86%;              
+    }
+    .deco-flecha-alojamiento{
+        width:15%;
+        top: 22%;
+        left: 68%;
+        
+    }
+    .deco-texto-alojamiento{
+        width: 18%;
+        top: 22%;
+        left: 50%;
+    }
+
+    .deco-texto-torta{
+        width: 18%;
+        top: 31%;
+        left: 2%;
+    }
+    .deco-flecha-ceremonia{
+        width: 18%;
+        bottom: -6%;
+        left: 16%;
+    }
+    .deco-texto-ceremonia{
+        width: 18%;
+        bottom: -5%;
+        left: 33%;
+    }
+    .deco-flecha-calendario{
+        width: 18%;
+        bottom: -2%;
+        left: 55%;
+    }
+    .deco-texto-calendario{
+        width: 18%;
+        bottom: -2%;
+        left: 75%;    
+    }
+    
+    .foto-feriados{
+        width: auto;
+        bottom: -3%;
+        left: 0%;
+    }
+    /* Estilo del CONTADOR*/
+    .contador {
+        gap: 10px;
+    }
+
+    .contador span {
+        font-size: 25px;
+    }
+    .seccion-final {
+        padding: 60px 20px;
+    }
+
+    .seccion-final h2 {
+        font-size: 30px;
+    }
+
+    .contenedor-final {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta-final {
+        padding: 30px 22px;
+    }
+
+ .seccion-final {
+    position: relative;
+}
+
+.deco1,
+.deco2,
+.deco3,
+.deco4 {
+    position: absolute;
+    width: 7%;
+    height: auto;
+}
+
+.deco1 {
+    top: 10%;
+    left: 5%;
+}
+
+.deco2 {
+        top: 92%;
+        right: 11%;
+        width: 16%;
+}
+
+.deco3 {
+   top: 37%;
+   left: 7%;
+   width: 15%;
+}
+
+.deco4 {
+          top: 25%;
+        width: 8%;
+        right: 3%;
+}
+#aliasBancario {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #7A2028;
+}
+
+
+}
+
