@@ -67,7 +67,7 @@ body {
 .pre-titulo {
     color: #879783;
 
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 12px;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -76,7 +76,7 @@ body {
 }
 
 h1 {
-    color: #4F5B4B;
+    color: #5b504b;
 
     font-size: 64px;
     font-weight: normal;
@@ -84,8 +84,12 @@ h1 {
 }
 
 h1 span {
-    color: #B79A8D;
+    color: #9D3333;
     font-style: italic;
+}
+.p {
+    font-size: 20px;
+        font-family: 'Poppins', sans-serif;
 }
 
 .separador {
@@ -102,7 +106,7 @@ h1 span {
 
 .fecha {
     color: #7D8877;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     letter-spacing: 4px;
     margin-bottom: 35px;
@@ -181,6 +185,7 @@ h1 span {
 
     .pre-titulo {
         font-size: 10px;
+        font-family: 'Poppins', sans-serif;
         letter-spacing: 3px;
     }
 
@@ -194,6 +199,7 @@ h1 span {
 
     .fecha {
         font-size: 12px;
+        font-family: 'Poppins', sans-serif;
         letter-spacing: 2px;
     }
 
@@ -399,7 +405,7 @@ h1 span {
 }
 
 .tarjeta-final h3 {
-    color: #9D3333;
+    color: #454C40;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: normal;
@@ -1326,7 +1332,7 @@ button.foto {
     }
 
     .tarjeta-final p {
-            color: #9D3333;
+            color: #454C40;
     font-style: italic;
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
@@ -1334,7 +1340,7 @@ button.foto {
     }
 
     .tarjeta-final h3 {
-        color: #9D3333;
+        color: #454C40;
         font-family: 'Poppins', sans-serif;
         font-size: 16px;
     }
@@ -1379,7 +1385,7 @@ button.foto {
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #7A2028;
+    color: #454C40;
 }
 
 
