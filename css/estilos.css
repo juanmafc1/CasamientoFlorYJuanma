@@ -121,7 +121,7 @@ h1 span {
     background-color: #879783;
     color: white;
 
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
     text-decoration: none;
@@ -144,6 +144,7 @@ h1 span {
 }
 
 .detalles h2 {
+
     max-width: 650px;
     margin: 0 auto 25px;
 
@@ -368,7 +369,8 @@ h1 span {
 
 .seccion-final h2 {
     text-align: center;
-    color: #4F5B4B;
+    color: #9D3333;
+    font-family: 'Poppins', sans-serif;
     font-size: 30px;
     font-weight: normal;
     margin-bottom: 45px;
@@ -397,13 +399,18 @@ h1 span {
 }
 
 .tarjeta-final h3 {
-    color: #879783;
+    color: #9D3333;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: normal;
     margin-bottom: 25px;
 }
 
 .tarjeta-final p {
+    color: #9D3333;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 11px;
+    font-weight: 600;
     line-height: 1.7;
     margin-bottom: 20px;
 }
@@ -498,7 +505,9 @@ h1 span {
 
 #aliasBancario {
     overflow-wrap: anywhere;
-    font-weight: bold;
+    font-weight: normal;
+    color: #9D3333;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -568,10 +577,12 @@ h1 span {
 .modal-subtitulo {
     color: #9D3333;
     font-style: italic;
+    font-family: 'Poppins', sans-serif;
 }
 
 .modal-informacion h2 {
     color: #9D3333;
+    font-family: 'Poppins', sans-serif;
 
     font-size: 40px;
     font-weight: normal;
@@ -579,6 +590,7 @@ h1 span {
 }
 .modal-informacion h3 {
     color: #9D3333;
+    font-family: 'Poppins', sans-serif;
 
     font-size: 21px;
     font-weight: normal;
@@ -587,11 +599,13 @@ h1 span {
 
 .modal-informacion p {
     line-height: 1.7;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* agregamos a editorial los siguientes objetos para menu */
 .menu-contenido {
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .menu-seccion {
@@ -608,6 +622,7 @@ h1 span {
 }
 
 .menu-seccion p {
+    font-family: 'Poppins', sans-serif;
     color: #675D54;
     font-size: 15px;
     line-height: 1.6;
@@ -655,6 +670,7 @@ h1 span {
     border-radius: 6px;
 
     font-size: 15px;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
 
     transition: background-color 0.3s ease,
@@ -928,28 +944,33 @@ button.foto {
     right: 13%;
 }
 
-.deco1{  
-    height: 50%;  
-    width: 15%;
-    top: 25%;
-    left: 32%;
+.deco1{
+       position: absolute;
+    height: 10%;
+    width: 10%;
+    top: 229%;
+    left: 6%;
 }
 
 .deco2{
-     width: 7%;
-    bottom: 25%;
-    right: 13%;
+    position: absolute;
+    width: 7%;
+    bottom: -190%;
+    right: 47%;
 }
 .deco3{
-    height: fit-content;
-    width: 15%;
-    bottom: 45%;
-    left: 80%;
+    position: absolute;
+    height: 10%;
+    width: 6%;
+    top: 247%;
+    left: 86%;
 }
 .deco4{
-     width: 7%;
-    bottom: 25%;
-    right: 13%;
+  position: absolute;
+    height: 10%;
+    width: 3%;
+    top: 269%;
+    left: 18%;
 }
 .deco5{
      width: 7%;
@@ -1188,6 +1209,8 @@ button.foto {
     font-size: 13px;
     color: #94a590;
 }
+
+
 
 /* RESPONSIVE */
 
